@@ -1,16 +1,18 @@
 import React from 'react';
 import {RouteHandler} from 'react-router';
-// says there are supposed to be two more components that he didn't mention: './Navbar'
-// and './Footer'
+import Navbar from './Navbar'
+import Footer from './Footer';
 
-class App extends React.Compoment {
-	render() {
-		return (
-			<div>
-				<RouteHandler />
-			</div>
-		);
-	}
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+      	<Navbar />
+        <RouteHandler />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

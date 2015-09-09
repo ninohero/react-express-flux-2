@@ -44,7 +44,7 @@ gulp.task('vendor', function() {
  | Compile third-party dependencies separately for faster performance.
  |--------------------------------------------------------------------------
  */
-gulp.task('browserfy-vendor', function() {
+gulp.task('browserify-vendor', function() {
 	return browserify()
 		.require(dependencies)
 		.bundle()
@@ -92,7 +92,7 @@ gulp.task('browserify-watch', ['browserify-vendor'], function() {
 			.pipe(source('bundle.js'))
 			.pipe(gulp.dest('public/js/'));
 	}
-)};
+});
 
 /*
  |--------------------------------------------------------------------------
