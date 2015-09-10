@@ -6,10 +6,10 @@ var characterSchema = new mongoose.Schema({
 	race: String,
 	gender: String,
 	bloodline: String,
-	winds: { type: Number, default: 0 },
+	wins: { type: Number, default: 0 },
 	losses: { type: Number, default: 0 },
 	reports: { type: Number, default: 0 },
-	random: { type: [Number], index: '20' },
+	random: { type: [Number], index: '2d' },
 	voted: {type: Boolean, default: false }
 });
 

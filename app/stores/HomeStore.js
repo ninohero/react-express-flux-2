@@ -8,17 +8,16 @@ class HomeStore {
 	}
 
 	onGetTwoCharactersSuccess(data) {
-		this.characters = [];
+		this.characters = data;
 	}
 
-	onGetTwoCharactersFail(errorMessage){
-		toasr.error(errorMessage);
+	onGetTwoCharactersFail(errorMessage) {
+		toastr.error(errorMessage);
 	}
 
 	onVoteFail(errorMessage) {
 		toastr.error(errorMessage);
 	}
-
 }
 
 export default alt.createStore(HomeStore);

@@ -27,14 +27,14 @@ class Footer extends React.Component {
 	}
 
 	render() {
-		let leaderboardCharacters = this.state.characters.map((character) => {
+		let leaderboardCharacters = this.state.characters.map(function(character) {
 			return (
 				<li key={character.characterId}>
-					<Link to={'/characters/' + character.character.characterId}>
-						<img className='thumb-md' src={'http://image.eveonline.copm/Character/' + character.characterId + '_128.jpg'} />
+					<Link to={'/characters/' + character.characterId}>
+						<img className='thumb-md' src={'http://image.eveonline.com/Character/' + character.characterId + '_128.jpg'} />
 					</Link>
 				</li>
-			)
+			);
 		});
 
 		return (

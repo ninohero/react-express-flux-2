@@ -15,7 +15,7 @@ class FooterStore {
 
 	onGetTopCharactersFail(jqXhr) {
 		// Handle multiple response formats, fallback to HTTP status code #
-		toaster.error(jqXhr.responseJSON && jqXhr.responseJSON.message || jqXhr.responseText || jqXhr.statusText);
+		toastr.error(jqXhr.responseJSON && jqXhr.responseJSON.message || jqXhr.responseText || jqXhr.statusText);
 	}
 }
 

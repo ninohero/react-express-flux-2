@@ -217,7 +217,7 @@ class Navbar extends React.Component {
 
 // need context types for referencing an instance of router (which gives us access to current 'path, queryparameters, routeparameters, and transitions to other routes')
 Navbar.contextTypes = {
-	router: React.PropTypes.isRequired
+	router: React.PropTypes.func.isRequired
 };
 
 export default Navbar;

@@ -23,6 +23,12 @@ class AddCharacterStore {
 
 	onUpdateName(event) {
 		this.name = event.target.value;
+		this.nameValidationState = '';
+		this.helpBlock = '';
+	}
+
+	onUpdateGender(event){
+		this.gender = event.target.value;
 		this.genderValidationState = '';
 	}
 
